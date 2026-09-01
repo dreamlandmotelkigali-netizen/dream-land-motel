@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dream Land Motel | Order</title>
+
+    <meta
+        name="description"
+        content="Order food and drinks from Dream Land Motel."
+    >
+
+    <link rel="stylesheet" href="order.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="order-header">
+
+    <a href="menu.html" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="order-brand">
+        <span>DREAM LAND</span>
+        <small>MOTEL</small>
+    </div>
+
+    <div class="cart-badge">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span id="cartCount">0</span>
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE TITLE
+===================================================== -->
+
+<section class="order-intro">
+
+    <p class="small-label">
+        DREAM LAND MOTEL
+    </p>
+
+    <h1>
+        Make Your Order
+    </h1>
+
+    <p>
+        Select the food and drinks you would like to order.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN ORDER AREA
+===================================================== -->
+
+<main class="order-page">
+
+
+    <!-- =================================================
+         MENU AREA
+    ================================================== -->
+
+    <section class="order-menu">
+
+        <div class="menu-top">
+
+            <div>
+
+                <p class="small-label">
+                    OUR MENU
+                </p>
+
+                <h2>
+                    Select Items
+                </h2>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="menu-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="menuSearch"
+                    placeholder="Search food or drink..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SCROLLABLE MENU
+        ================================================== -->
+
+        <div class="menu-scroll" id="menuScroll">
+
+
+            <!-- =================================================
+                 FOOD
+            ================================================== -->
+
+            <section class="order-category">
+
+                <div class="category-title">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                    <div>
+                        <small>FOOD</small>
+                        <h3>Brochette</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="order-list">
+
+                    <div
+                        class="order-item"
+                        data-name="Umubiri"
+                        data-price="2000"
+                    >
+                        <div>
+                            <strong>Umubiri</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Umubiri"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Umwijima"
+                        data-price="2000"
+                    >
+                        <div>
+                            <strong>Umwijima</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Umwijima"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Umutima"
+                        data-price="2000"
+                    >
+                        <div>
+                            <strong>Umutima</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Umutima"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Impyiko"
+                        data-price="2000"
+                    >
+                        <div>
+                            <strong>Impyiko</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Impyiko"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Zingaro"
+                        data-price="2500"
+                    >
+                        <div>
+                            <strong>Zingaro</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Zingaro"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Ururimi"
+                        data-price="2500"
+                    >
+                        <div>
+                            <strong>Ururimi</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Ururimi"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Umushishito"
+                        data-price="2500"
+                    >
+                        <div>
+                            <strong>Umushishito</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Umushishito"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Igiti"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Igiti</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Igiti"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Inkoko"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Inkoko</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Inkoko"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chicken Wings"
+                        data-price="8000"
+                    >
+                        <div>
+                            <strong>Chicken Wings</strong>
+                            <span>8,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Chicken Wings"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Akabenzi 1KG"
+                        data-price="8500"
+                    >
+                        <div>
+                            <strong>Akabenzi 1KG</strong>
+                            <span>8,500 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Akabenzi"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chicken Leg"
+                        data-price="10000"
+                    >
+                        <div>
+                            <strong>Chicken Leg</strong>
+                            <span>10,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Chicken Leg"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Fish Fillet"
+                        data-price="10000"
+                    >
+                        <div>
+                            <strong>Fish Fillet</strong>
+                            <span>10,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Fish Fillet"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Ikidari"
+                        data-price="12000"
+                    >
+                        <div>
+                            <strong>Ikidari</strong>
+                            <span>12,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Ikidari"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Urukwavu"
+                        data-price="15000"
+                    >
+                        <div>
+                            <strong>Urukwavu</strong>
+                            <span>15,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Urukwavu"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chicken"
+                        data-price="20000"
+                    >
+                        <div>
+                            <strong>Chicken</strong>
+                            <span>20,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                            aria-label="Add Chicken"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 IGISAFURIYA
+            ================================================== -->
+
+            <section class="order-category">
+
+                <div class="category-title">
+
+                    <i class="fa-solid fa-pot-food"></i>
+
+                    <div>
+                        <small>FOOD</small>
+                        <h3>Igisafuriya</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="order-list">
+
+                    <div
+                        class="order-item"
+                        data-name="Igisafuriya Cy'Urukwavu"
+                        data-price="15000"
+                    >
+                        <div>
+                            <strong>Cy'Urukwavu</strong>
+                            <span>15,000–30,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Igisafuriya Cy'Ikidari"
+                        data-price="20000"
+                    >
+                        <div>
+                            <strong>Cy'Ikidari</strong>
+                            <span>20,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Igisafuriya Cy'Inkoko"
+                        data-price="30000"
+                    >
+                        <div>
+                            <strong>Cy'Inkoko</strong>
+                            <span>30,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Igisafuriya Cy'Inka"
+                        data-price="15000"
+                    >
+                        <div>
+                            <strong>Cy'Inka</strong>
+                            <span>15,000–30,000 Rwf</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="select-item"
+                        >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 NYAMACOMA
+            ================================================== -->
+
+            <section class="order-category">
+
+                <div class="category-title">
+
+                    <i class="fa-solid fa-drumstick-bite"></i>
+
+                    <div>
+                        <small>FOOD</small>
+                        <h3>Nyamacoma</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="order-list">
+
+                    <div
+                        class="order-item"
+                        data-name="Igitoki"
+                        data-price="500"
+                    >
+                        <div>
+                            <strong>Igitoki</strong>
+                            <span>500 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Ikirayi"
+                        data-price="1000"
+                    >
+                        <div>
+                            <strong>Ikirayi</strong>
+                            <span>1,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Salad"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Salad</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Gacumbari"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Gacumbari</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chips"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Chips</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Pomme Saute"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Pomme Saute</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Special"
+                        data-price="3500"
+                    >
+                        <div>
+                            <strong>Special</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Omelette Special"
+                        data-price="4000"
+                    >
+                        <div>
+                            <strong>Omelette Special</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chicken Wings 6pcs with Chips"
+                        data-price="5000"
+                    >
+                        <div>
+                            <strong>Chicken Wings (6pcs) with Chips</strong>
+                            <span>5,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chicken Leg with Chips"
+                        data-price="6000"
+                    >
+                        <div>
+                            <strong>Chicken Leg with Chips</strong>
+                            <span>6,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Chicken Stew with Rice"
+                        data-price="6000"
+                    >
+                        <div>
+                            <strong>Chicken Stew with Rice</strong>
+                            <span>6,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Ukuboko"
+                        data-price="8000"
+                    >
+                        <div>
+                            <strong>Ukuboko</strong>
+                            <span>8,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Piece Y'Ikidari"
+                        data-price="10000"
+                    >
+                        <div>
+                            <strong>Piece Y'Ikidari</strong>
+                            <span>10,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Ukuguru"
+                        data-price="14000"
+                    >
+                        <div>
+                            <strong>Ukuguru</strong>
+                            <span>14,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div
+                        class="order-item"
+                        data-name="Buffet"
+                        data-price="3000"
+                    >
+                        <div>
+                            <strong>Buffet</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 JUICES
+            ================================================== -->
+
+            <section class="order-category">
+
+                <div class="category-title">
+
+                    <i class="fa-solid fa-glass-water"></i>
+
+                    <div>
+                        <small>DRINKS</small>
+                        <h3>Juices</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="order-list">
+
+                    <div class="order-item" data-name="Cocktail Juice" data-price="4000">
+                        <div>
+                            <strong>Cocktail Juice</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Lemon Juice" data-price="4000">
+                        <div>
+                            <strong>Lemon Juice</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Passion Juice" data-price="4000">
+                        <div>
+                            <strong>Passion Juice</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Pineapple Juice" data-price="4000">
+                        <div>
+                            <strong>Pineapple Juice</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Mango Juice" data-price="4000">
+                        <div>
+                            <strong>Mango Juice</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 TEA & COFFEE
+            ================================================== -->
+
+            <section class="order-category">
+
+                <div class="category-title">
+
+                    <i class="fa-solid fa-mug-hot"></i>
+
+                    <div>
+                        <small>HOT DRINKS</small>
+                        <h3>Tea & Coffee</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="order-list">
+
+                    <div class="order-item" data-name="Umucyai Cyai" data-price="2000">
+                        <div>
+                            <strong>Umucyai Cyai</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Umwenya Tea" data-price="2000">
+                        <div>
+                            <strong>Umwenya Tea</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Black Tea" data-price="2000">
+                        <div>
+                            <strong>Black Tea</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Lemon Tea" data-price="2500">
+                        <div>
+                            <strong>Lemon Tea</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Green Tea" data-price="2500">
+                        <div>
+                            <strong>Green Tea</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="African Tea" data-price="3000">
+                        <div>
+                            <strong>African Tea</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Mint Tea" data-price="3000">
+                        <div>
+                            <strong>Mint Tea</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Spiced Tea" data-price="3500">
+                        <div>
+                            <strong>Spiced Tea</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Black Coffee" data-price="3500">
+                        <div>
+                            <strong>Black Coffee</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="African Coffee" data-price="5000">
+                        <div>
+                            <strong>African Coffee</strong>
+                            <span>5,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 DRINKS
+            ================================================== -->
+
+            <section class="order-category">
+
+                <div class="category-title">
+
+                    <i class="fa-solid fa-champagne-glasses"></i>
+
+                    <div>
+                        <small>DRINKS</small>
+                        <h3>Drinks</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="order-list">
+
+                    <div class="order-item" data-name="Twiste" data-price="700">
+                        <div>
+                            <strong>Twiste</strong>
+                            <span>700 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Cheetan" data-price="700">
+                        <div>
+                            <strong>Cheetan</strong>
+                            <span>700 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Energy" data-price="800">
+                        <div>
+                            <strong>Energy</strong>
+                            <span>800 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Panache" data-price="1000">
+                        <div>
+                            <strong>Panache</strong>
+                            <span>1,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="P. Fanta" data-price="1000">
+                        <div>
+                            <strong>P. Fanta</strong>
+                            <span>1,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Amazi Mato" data-price="600">
+                        <div>
+                            <strong>Amazi Mato</strong>
+                            <span>600 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Amazi Manini" data-price="1200">
+                        <div>
+                            <strong>Amazi Manini</strong>
+                            <span>1,200 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="P. Skol" data-price="1300">
+                        <div>
+                            <strong>P. Skol</strong>
+                            <span>1,300 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="G. Fanta" data-price="1500">
+                        <div>
+                            <strong>G. Fanta</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Turbo King" data-price="1500">
+                        <div>
+                            <strong>Turbo King</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Napoleon" data-price="1500">
+                        <div>
+                            <strong>Napoleon</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Legend" data-price="1500">
+                        <div>
+                            <strong>Legend</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Juice Inyange" data-price="1500">
+                        <div>
+                            <strong>Juice Inyange</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Milinda Juice" data-price="1500">
+                        <div>
+                            <strong>Milinda Juice</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Juice Embe" data-price="1500">
+                        <div>
+                            <strong>Juice Embe</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Skol Pulse" data-price="1500">
+                        <div>
+                            <strong>Skol Pulse</strong>
+                            <span>1,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Knowless" data-price="1700">
+                        <div>
+                            <strong>Knowless</strong>
+                            <span>1,700 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Heineken" data-price="2000">
+                        <div>
+                            <strong>Heineken</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="G. Virunga" data-price="2000">
+                        <div>
+                            <strong>G. Virunga</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Skol Lager" data-price="2000">
+                        <div>
+                            <strong>Skol Lager</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Skol 5" data-price="2000">
+                        <div>
+                            <strong>Skol 5</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Heineken 0 Alcohol" data-price="2000">
+                        <div>
+                            <strong>Heineken 0 Alcohol</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Smirnoff Vide" data-price="2000">
+                        <div>
+                            <strong>Smirnoff Vide</strong>
+                            <span>2,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Gordons" data-price="2500">
+                        <div>
+                            <strong>Gordons</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Primus" data-price="2500">
+                        <div>
+                            <strong>Primus</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="G. Skol" data-price="2500">
+                        <div>
+                            <strong>G. Skol</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Tusker" data-price="2500">
+                        <div>
+                            <strong>Tusker</strong>
+                            <span>2,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="G. Mitsing" data-price="3000">
+                        <div>
+                            <strong>G. Mitsing</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Exo" data-price="3000">
+                        <div>
+                            <strong>Exo</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Guinness" data-price="3000">
+                        <div>
+                            <strong>Guinness</strong>
+                            <span>3,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Red Blue" data-price="3500">
+                        <div>
+                            <strong>Red Blue</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Big Fanta Plastic" data-price="3500">
+                        <div>
+                            <strong>Big Fanta Plastic</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Smirnoff Canet" data-price="3500">
+                        <div>
+                            <strong>Smirnoff Canet</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Bavaria 0 All" data-price="3500">
+                        <div>
+                            <strong>Bavaria 0 All</strong>
+                            <span>3,500 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Bavaria B.6" data-price="4000">
+                        <div>
+                            <strong>Bavaria B.6</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Gilbis Small" data-price="4000">
+                        <div>
+                            <strong>Gilbis Small</strong>
+                            <span>4,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Savanah" data-price="5000">
+                        <div>
+                            <strong>Savanah</strong>
+                            <span>5,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Gilbis Big" data-price="15000">
+                        <div>
+                            <strong>Gilbis Big</strong>
+                            <span>15,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Four Cousine" data-price="18000">
+                        <div>
+                            <strong>Four Cousine</strong>
+                            <span>18,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Altar Wine" data-price="20000">
+                        <div>
+                            <strong>Altar Wine</strong>
+                            <span>20,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Jameson" data-price="60000">
+                        <div>
+                            <strong>Jameson</strong>
+                            <span>60,000 Rwf</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Red Label" data-price="100000">
+                        <div>
+                            <strong>Red Label</strong>
+                            <span>100,000 Rwf • Gupima 12,000</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Jack Daniel" data-price="100000">
+                        <div>
+                            <strong>Jack Daniel</strong>
+                            <span>100,000 Rwf • Gupima 12,000</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Double Black" data-price="100000">
+                        <div>
+                            <strong>Double Black</strong>
+                            <span>100,000 Rwf • Gupima 20,000</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="order-item" data-name="Black Label" data-price="110000">
+                        <div>
+                            <strong>Black Label</strong>
+                            <span>110,000 Rwf • Gupima 17,000</span>
+                        </div>
+                        <button type="button" class="select-item">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CART / ORDER SUMMARY
+    ================================================== -->
+
+    <aside class="order-cart">
+
+        <div class="cart-header">
+
+            <div>
+
+                <p class="small-label">
+                    YOUR ORDER
+                </p>
+
+                <h2>
+                    Order Summary
+                </h2>
+
+            </div>
+
+            <i class="fa-solid fa-basket-shopping"></i>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+
+            <div class="empty-cart">
+
+                <i class="fa-solid fa-basket-shopping"></i>
+
+                <p>
+                    Your order is empty.
+                </p>
+
+                <small>
+                    Select items from the menu.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                0 Rwf
+            </strong>
+
+        </div>
+
+
+        <!-- =================================================
+             CUSTOMER INFORMATION
+        ================================================== -->
+
+        <div class="customer-form">
+
+            <h3>
+                Your Details
+            </h3>
+
+
+            <label for="customerName">
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                autocomplete="name"
+            >
+
+
+            <label for="customerPhone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="078xxxxxxx"
+                inputmode="numeric"
+                maxlength="10"
+                autocomplete="tel"
+            >
+
+
+            <label for="branch">
+                Branch
+            </label>
+
+            <select id="branch">
+
+                <option value="">
+                    Select branch
+                </option>
+
+                <option value="Kabuga">
+                    Dream Land Motel — Kabuga
+                </option>
+
+                <option value="Bisenga">
+                    Dream Land Motel — Bisenga
+                </option>
+
+            </select>
+
+
+            <label for="orderType">
+                Order Type
+            </label>
+
+            <select id="orderType">
+
+                <option value="restaurant">
+                    At Restaurant
+                </option>
+
+                <option value="takeaway">
+                    Takeaway
+                </option>
+
+                <option value="delivery">
+                    Delivery
+                </option>
+
+            </select>
+
+
+            <label for="orderNote">
+                Note <span>(Optional)</span>
+            </label>
+
+            <textarea
+                id="orderNote"
+                rows="3"
+                placeholder="Any special request?"
+            ></textarea>
+
+
+            <button
+                type="button"
+                id="submitOrder"
+                class="send-order"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                SEND ORDER
+
+            </button>
+
+
+            <p class="order-notice">
+
+                Your order will be sent directly to
+                Dream Land Motel via WhatsApp.
+
+            </p>
+
+        </div>
+
+    </aside>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="order-footer">
+
+    <div class="footer-logo">
+        DREAM LAND
+    </div>
+
+    <p>
+        BAR • RESTAURANT • MOTEL
+    </p>
+
+    <a href="tel:+250784365816">
+        <i class="fa-solid fa-phone"></i>
+        0784 365 816
+    </a>
+
+    <p class="copyright">
+        © 2026 Dream Land Motel. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     ORDER JAVASCRIPT
+===================================================== -->
+
+<script src="order.js"></script>
+
+</body>
+
+</html>
