@@ -2956,3 +2956,8 @@ footer > p {
     }
 
 }
+
+
+   u#page-loader {
+    display: none !important;
+}
