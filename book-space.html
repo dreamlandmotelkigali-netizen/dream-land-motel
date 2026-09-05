@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book a Space | Dream Land Motel</title>
+
+    <meta
+        name="description"
+        content="Book a space at Dream Land Motel for meetings, birthdays, family gatherings and small events."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                Dream Land Motel
+            </a>
+
+            <a href="index.html" class="back-home">
+                ← Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         BOOK SPACE HERO
+    ====================================================== -->
+
+    <section class="book-space-hero">
+
+        <div class="container">
+
+            <span class="booking-badge">
+                🎉 SPACE & EVENT BOOKING
+            </span>
+
+            <h1>
+                Book a Space
+            </h1>
+
+            <p>
+                Reserve a space for meetings, birthdays,
+                family gatherings and small events.
+            </p>
+
+            <div class="space-price-note">
+
+                <strong>
+                    5,000 RWF / Hour
+                </strong>
+
+                <span>
+                    Space booking fee
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOKING FORM
+    ====================================================== -->
+
+    <main class="container book-space-container">
+
+        <form id="spaceBookingForm">
+
+
+            <!-- =================================================
+                 APPLICANT INFORMATION
+            ================================================== -->
+
+            <section class="booking-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        👤
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Your Information
+                        </h2>
+
+                        <p>
+                            Please provide your contact details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Telephone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="e.g. 0788 356 146"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="location">
+                            Where are you coming from?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="City, Sector, District..."
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EVENT INFORMATION
+            ================================================== -->
+
+            <section class="booking-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        🎉
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Event Details
+                        </h2>
+
+                        <p>
+                            Tell us about your event.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="eventType">
+                            Event Type
+                        </label>
+
+                        <select
+                            id="eventType"
+                            name="eventType"
+                            required
+                        >
+
+                            <option value="">
+                                Select event type
+                            </option>
+
+                            <option value="Small Meeting">
+                                👥 Small Meeting
+                            </option>
+
+                            <option value="Birthday">
+                                🎂 Birthday
+                            </option>
+
+                            <option value="Family Gathering">
+                                👨‍👩‍👧 Family Gathering
+                            </option>
+
+                            <option value="Small Event">
+                                🎉 Small Event
+                            </option>
+
+                            <option value="Business Meeting">
+                                💼 Business Meeting
+                            </option>
+
+                            <option value="Celebration">
+                                🥳 Celebration
+                            </option>
+
+                            <option value="Other">
+                                ✨ Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guests">
+                            Number of Guests
+                        </label>
+
+                        <input
+                            type="number"
+                            id="guests"
+                            name="guests"
+                            min="1"
+                            placeholder="e.g. 10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="eventDate">
+                            Event Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="eventDate"
+                            name="eventDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="startTime">
+                            Start Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="startTime"
+                            name="startTime"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- =============================================
+                         DURATION
+                    ============================================== -->
+
+                    <div class="form-group full-width">
+
+                        <label for="duration">
+                            How many hours?
+                        </label>
+
+                        <select
+                            id="duration"
+                            name="duration"
+                            required
+                        >
+
+                            <option value="">
+                                Select duration
+                            </option>
+
+                            <option value="1">
+                                1 Hour — 5,000 RWF
+                            </option>
+
+                            <option value="2">
+                                2 Hours — 10,000 RWF
+                            </option>
+
+                            <option value="3">
+                                3 Hours — 15,000 RWF
+                            </option>
+
+                            <option value="4">
+                                4 Hours — 20,000 RWF
+                            </option>
+
+                            <option value="5">
+                                5 Hours — 25,000 RWF
+                            </option>
+
+                            <option value="6">
+                                6 Hours — 30,000 RWF
+                            </option>
+
+                            <option value="7">
+                                7 Hours — 35,000 RWF
+                            </option>
+
+                            <option value="8">
+                                8 Hours — 40,000 RWF
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SPECIAL REQUEST
+            ================================================== -->
+
+            <section class="booking-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        📝
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Special Request
+                        </h2>
+
+                        <p>
+                            Tell us what you would like us to
+                            prepare before you arrive.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="specialRequest">
+                        What would you like us to prepare?
+                    </label>
+
+                    <textarea
+                        id="specialRequest"
+                        name="specialRequest"
+                        rows="6"
+                        placeholder="Example: Muzadutegurire buri muntu inkoko, turubo imwe imwe, amazi mato 1 kuri buri muntu..."
+                    ></textarea>
+
+                    <small class="form-help">
+                        You can write your request in your own words.
+                        Special requests are not included in the space
+                        booking fee. Dream Land will contact you about
+                        the price.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 MENU QUESTION
+            ================================================== -->
+
+            <section class="booking-card menu-question-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        🍽️
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Would you like to view our Menu?
+                        </h2>
+
+                        <p>
+                            You can check our food and drinks menu
+                            before completing your request.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-question-actions">
+
+                    <button
+                        type="button"
+                        class="menu-yes-btn"
+                        id="viewMenuBtn"
+                    >
+                        🍽️ Yes, View Menu
+                    </button>
+
+                    <button
+                        type="button"
+                        class="menu-no-btn"
+                        id="continueBookingBtn"
+                    >
+                        Continue Booking
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 BOOKING SUMMARY
+            ================================================== -->
+
+            <section class="booking-card booking-summary-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        📋
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Booking Summary
+                        </h2>
+
+                        <p>
+                            Review your booking before sending it.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-box">
+
+                    <div class="summary-row">
+
+                        <span>
+                            Event
+                        </span>
+
+                        <strong id="summaryEvent">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Guests
+                        </span>
+
+                        <strong id="summaryGuests">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Date
+                        </span>
+
+                        <strong id="summaryDate">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Start Time
+                        </span>
+
+                        <strong id="summaryTime">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Duration
+                        </span>
+
+                        <strong id="summaryDuration">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Space Fee
+                        </span>
+
+                        <strong id="summarySpaceFee">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            TOTAL
+                        </span>
+
+                        <strong id="summaryTotal">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <p class="summary-note">
+                        Special requests are not included in this
+                        total. Dream Land Motel will contact you
+                        to confirm their price.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SUBMIT
+            ================================================== -->
+
+            <section class="booking-submit-section">
+
+                <button
+                    type="submit"
+                    class="submit-booking-btn"
+                >
+                    📲 Send Booking Request
+                </button>
+
+                <p>
+                    Dream Land Motel will contact you to confirm
+                    your request.
+                </p>
+
+            </section>
+
+        </form>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FLOATING CONTACT BUTTONS
+    ====================================================== -->
+
+    <div class="floating-contact">
+
+        <a
+            href="https://wa.me/250784365816"
+            class="floating-whatsapp"
+            aria-label="Contact Dream Land Motel on WhatsApp"
+            title="WhatsApp Dream Land Motel"
+        >
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+
+        <a
+            href="tel:+250784365816"
+            class="floating-phone"
+            aria-label="Call Dream Land Motel"
+            title="Call Dream Land Motel"
+        >
+            <i class="fas fa-phone"></i>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
