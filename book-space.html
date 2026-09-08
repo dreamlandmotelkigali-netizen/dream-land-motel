@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book a Space | Dream Land Motel</title>
+
+    <meta
+        name="description"
+        content="Book a space at Dream Land Motel for meetings, birthdays, family gatherings and small events."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <style>
+        /* =====================================================
+           LANGUAGE BUTTON
+        ====================================================== */
+
+        .language-toggle {
+            border: 1px solid rgba(212, 175, 55, 0.7);
+            background: transparent;
+            color: inherit;
+            padding: 7px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .language-toggle:active {
+            transform: scale(0.97);
+        }
+
+        @media (max-width: 480px) {
+
+            .language-toggle {
+                padding: 6px 8px;
+                font-size: 11px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                Dream Land Motel
+            </a>
+
+            <button
+                type="button"
+                id="bookSpaceLanguageToggle"
+                class="language-toggle"
+                aria-label="Switch to Kinyarwanda"
+                title="Hindura ururimi ujye mu Kinyarwanda"
+            >
+                Kinyarwanda
+            </button>
+
+            <a
+                href="index.html"
+                class="back-home"
+                data-translate="backHome"
+            >
+                ← Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         BOOK SPACE HERO
+    ====================================================== -->
+
+    <section class="book-space-hero">
+
+        <div class="container">
+
+            <span
+                class="booking-badge"
+                data-translate="spaceEventBooking"
+            >
+                🎉 SPACE & EVENT BOOKING
+            </span>
+
+            <h1 data-translate="bookSpaceTitle">
+                Book a Space
+            </h1>
+
+            <p data-translate="bookSpaceIntro">
+                Reserve a space for meetings, birthdays,
+                family gatherings and small events.
+            </p>
+
+            <div class="space-price-note">
+
+                <strong data-translate="spacePrice">
+                    5,000 RWF / Hour
+                </strong>
+
+                <span data-translate="spaceBookingFee">
+                    Space booking fee
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOKING FORM
+    ====================================================== -->
+
+    <main class="container book-space-container">
+
+        <form id="spaceBookingForm">
+
+
+            <!-- =================================================
+                 APPLICANT INFORMATION
+            ================================================== -->
+
+            <section class="booking-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        👤
+                    </span>
+
+                    <div>
+
+                        <h2 data-translate="yourInformation">
+                            Your Information
+                        </h2>
+
+                        <p data-translate="contactDetails">
+                            Please provide your contact details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="fullName"
+                            data-translate="fullName"
+                        >
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            data-translate-placeholder="enterFullName"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="phone"
+                            data-translate="telephone"
+                        >
+                            Telephone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="e.g. 0788 356 146"
+                            data-translate-placeholder="phonePlaceholder"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label
+                            for="location"
+                            data-translate="comingFrom"
+                        >
+                            Where are you coming from?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="City, Sector, District..."
+                            data-translate-placeholder="locationPlaceholder"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EVENT INFORMATION
+            ================================================== -->
+
+            <section class="booking-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        🎉
+                    </span>
+
+                    <div>
+
+                        <h2 data-translate="eventDetails">
+                            Event Details
+                        </h2>
+
+                        <p data-translate="tellEvent">
+                            Tell us about your event.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="eventType"
+                            data-translate="eventType"
+                        >
+                            Event Type
+                        </label>
+
+                        <select
+                            id="eventType"
+                            name="eventType"
+                            required
+                        >
+
+                            <option
+                                value=""
+                                data-translate="selectEventType"
+                            >
+                                Select event type
+                            </option>
+
+                            <option
+                                value="Small Meeting"
+                                data-translate="smallMeeting"
+                            >
+                                👥 Small Meeting
+                            </option>
+
+                            <option
+                                value="Birthday"
+                                data-translate="birthday"
+                            >
+                                🎂 Birthday
+                            </option>
+
+                            <option
+                                value="Family Gathering"
+                                data-translate="familyGathering"
+                            >
+                                👨‍👩‍👧 Family Gathering
+                            </option>
+
+                            <option
+                                value="Small Event"
+                                data-translate="smallEvent"
+                            >
+                                🎉 Small Event
+                            </option>
+
+                            <option
+                                value="Business Meeting"
+                                data-translate="businessMeeting"
+                            >
+                                💼 Business Meeting
+                            </option>
+
+                            <option
+                                value="Celebration"
+                                data-translate="celebration"
+                            >
+                                🥳 Celebration
+                            </option>
+
+                            <option
+                                value="Other"
+                                data-translate="other"
+                            >
+                                ✨ Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="guests"
+                            data-translate="numberOfGuests"
+                        >
+                            Number of Guests
+                        </label>
+
+                        <input
+                            type="number"
+                            id="guests"
+                            name="guests"
+                            min="1"
+                            placeholder="e.g. 10"
+                            data-translate-placeholder="guestsPlaceholder"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="eventDate"
+                            data-translate="eventDate"
+                        >
+                            Event Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="eventDate"
+                            name="eventDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="startTime"
+                            data-translate="startTime"
+                        >
+                            Start Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="startTime"
+                            name="startTime"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- =============================================
+                         DURATION
+                    ============================================== -->
+
+                    <div class="form-group full-width">
+
+                        <label
+                            for="duration"
+                            data-translate="howManyHours"
+                        >
+                            How many hours?
+                        </label>
+
+                        <select
+                            id="duration"
+                            name="duration"
+                            required
+                        >
+
+                            <option
+                                value=""
+                                data-translate="selectDuration"
+                            >
+                                Select duration
+                            </option>
+
+                            <option
+                                value="1"
+                                data-translate="duration1"
+                            >
+                                1 Hour — 5,000 RWF
+                            </option>
+
+                            <option
+                                value="2"
+                                data-translate="duration2"
+                            >
+                                2 Hours — 10,000 RWF
+                            </option>
+
+                            <option
+                                value="3"
+                                data-translate="duration3"
+                            >
+                                3 Hours — 15,000 RWF
+                            </option>
+
+                            <option
+                                value="4"
+                                data-translate="duration4"
+                            >
+                                4 Hours — 20,000 RWF
+                            </option>
+
+                            <option
+                                value="5"
+                                data-translate="duration5"
+                            >
+                                5 Hours — 25,000 RWF
+                            </option>
+
+                            <option
+                                value="6"
+                                data-translate="duration6"
+                            >
+                                6 Hours — 30,000 RWF
+                            </option>
+
+                            <option
+                                value="7"
+                                data-translate="duration7"
+                            >
+                                7 Hours — 35,000 RWF
+                            </option>
+
+                            <option
+                                value="8"
+                                data-translate="duration8"
+                            >
+                                8 Hours — 40,000 RWF
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SPECIAL REQUEST
+            ================================================== -->
+
+            <section class="booking-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        📝
+                    </span>
+
+                    <div>
+
+                        <h2 data-translate="specialRequest">
+                            Special Request
+                        </h2>
+
+                        <p data-translate="specialRequestIntro">
+                            Tell us what you would like us to
+                            prepare before you arrive.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label
+                        for="specialRequest"
+                        data-translate="whatPrepare"
+                    >
+                        What would you like us to prepare?
+                    </label>
+
+                    <textarea
+                        id="specialRequest"
+                        name="specialRequest"
+                        rows="6"
+                        placeholder="Example: Muzadutegurire buri muntu inkoko, turubo imwe imwe, amazi mato 1 kuri buri muntu..."
+                        data-translate-placeholder="specialRequestPlaceholder"
+                    ></textarea>
+
+                    <small
+                        class="form-help"
+                        data-translate="specialRequestHelp"
+                    >
+                        You can write your request in your own words.
+                        Special requests are not included in the space
+                        booking fee. Dream Land will contact you about
+                        the price.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 MENU QUESTION
+            ================================================== -->
+
+            <section class="booking-card menu-question-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        🍽️
+                    </span>
+
+                    <div>
+
+                        <h2 data-translate="viewOurMenu">
+                            Would you like to view our Menu?
+                        </h2>
+
+                        <p data-translate="menuBeforeBooking">
+                            You can check our food and drinks menu
+                            before completing your request.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-question-actions">
+
+                    <button
+                        type="button"
+                        class="menu-yes-btn"
+                        id="viewMenuBtn"
+                    >
+                        🍽️
+                        <span data-translate="yesViewMenu">
+                            Yes, View Menu
+                        </span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="menu-no-btn"
+                        id="continueBookingBtn"
+                        data-translate="continueBooking"
+                    >
+                        Continue Booking
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 BOOKING SUMMARY
+            ================================================== -->
+
+            <section class="booking-card booking-summary-card">
+
+                <div class="section-heading">
+
+                    <span class="section-icon">
+                        📋
+                    </span>
+
+                    <div>
+
+                        <h2 data-translate="bookingSummary">
+                            Booking Summary
+                        </h2>
+
+                        <p data-translate="reviewBooking">
+                            Review your booking before sending it.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-box">
+
+                    <div class="summary-row">
+
+                        <span data-translate="event">
+                            Event
+                        </span>
+
+                        <strong id="summaryEvent">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span data-translate="guests">
+                            Guests
+                        </span>
+
+                        <strong id="summaryGuests">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span data-translate="date">
+                            Date
+                        </span>
+
+                        <strong id="summaryDate">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span data-translate="startTime">
+                            Start Time
+                        </span>
+
+                        <strong id="summaryTime">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span data-translate="duration">
+                            Duration
+                        </span>
+
+                        <strong id="summaryDuration">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span data-translate="spaceFee">
+                            Space Fee
+                        </span>
+
+                        <strong id="summarySpaceFee">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-total">
+
+                        <span data-translate="total">
+                            TOTAL
+                        </span>
+
+                        <strong id="summaryTotal">
+                            0 RWF
+                        </strong>
+
+                    </div>
+
+
+                    <p
+                        class="summary-note"
+                        data-translate="summaryNote"
+                    >
+                        Special requests are not included in this
+                        total. Dream Land Motel will contact you
+                        to confirm their price.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SUBMIT
+            ================================================== -->
+
+            <section class="booking-submit-section">
+
+                <button
+                    type="submit"
+                    class="submit-booking-btn"
+                >
+                    📲
+                    <span data-translate="sendBookingRequest">
+                        Send Booking Request
+                    </span>
+                </button>
+
+                <p data-translate="confirmationNotice">
+                    Dream Land Motel will contact you to confirm
+                    your request.
+                </p>
+
+            </section>
+
+        </form>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FLOATING CONTACT BUTTONS
+    ====================================================== -->
+
+    <div class="floating-contact">
+
+        <a
+            href="https://wa.me/250784365816"
+            class="floating-whatsapp"
+            aria-label="Contact Dream Land Motel on WhatsApp"
+            title="WhatsApp Dream Land Motel"
+        >
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+
+        <a
+            href="tel:+250784365816"
+            class="floating-phone"
+            aria-label="Call Dream Land Motel"
+            title="Call Dream Land Motel"
+        >
+            <i class="fas fa-phone"></i>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+    <!-- =====================================================
+         BOOK SPACE LANGUAGE SYSTEM
+    ====================================================== -->
+
+    <script>
+
+        const bookSpaceTranslations = {
+
+            en: {
+
+                backHome: "← Home",
+
+                spaceEventBooking: "🎉 SPACE & EVENT BOOKING",
+                bookSpaceTitle: "Book a Space",
+                bookSpaceIntro:
+                    "Reserve a space for meetings, birthdays, family gatherings and small events.",
+                spacePrice: "5,000 RWF / Hour",
+                spaceBookingFee: "Space booking fee",
+
+                yourInformation: "Your Information",
+                contactDetails:
+                    "Please provide your contact details.",
+
+                fullName: "Full Name",
+                enterFullName: "Enter your full name",
+
+                telephone: "Telephone",
+                phonePlaceholder: "e.g. 0788 356 146",
+
+                comingFrom: "Where are you coming from?",
+                locationPlaceholder:
+                    "City, Sector, District...",
+
+                eventDetails: "Event Details",
+                tellEvent: "Tell us about your event.",
+
+                eventType: "Event Type",
+                selectEventType: "Select event type",
+
+                smallMeeting: "👥 Small Meeting",
+                birthday: "🎂 Birthday",
+                familyGathering: "👨‍👩‍👧 Family Gathering",
+                smallEvent: "🎉 Small Event",
+                businessMeeting: "💼 Business Meeting",
+                celebration: "🥳 Celebration",
+                other: "✨ Other",
+
+                numberOfGuests: "Number of Guests",
+                guestsPlaceholder: "e.g. 10",
+
+                eventDate: "Event Date",
+                startTime: "Start Time",
+
+                howManyHours: "How many hours?",
+                selectDuration: "Select duration",
+
+                duration1: "1 Hour — 5,000 RWF",
+                duration2: "2 Hours — 10,000 RWF",
+                duration3: "3 Hours — 15,000 RWF",
+                duration4: "4 Hours — 20,000 RWF",
+                duration5: "5 Hours — 25,000 RWF",
+                duration6: "6 Hours — 30,000 RWF",
+                duration7: "7 Hours — 35,000 RWF",
+                duration8: "8 Hours — 40,000 RWF",
+
+                specialRequest: "Special Request",
+
+                specialRequestIntro:
+                    "Tell us what you would like us to prepare before you arrive.",
+
+                whatPrepare:
+                    "What would you like us to prepare?",
+
+                specialRequestPlaceholder:
+                    "Example: Please prepare chicken for each person, one bottle of water for each guest...",
+
+                specialRequestHelp:
+                    "You can write your request in your own words. Special requests are not included in the space booking fee. Dream Land will contact you about the price.",
+
+                viewOurMenu:
+                    "Would you like to view our Menu?",
+
+                menuBeforeBooking:
+                    "You can check our food and drinks menu before completing your request.",
+
+                yesViewMenu: "Yes, View Menu",
+                continueBooking: "Continue Booking",
+
+                bookingSummary: "Booking Summary",
+                reviewBooking:
+                    "Review your booking before sending it.",
+
+                event: "Event",
+                guests: "Guests",
+                date: "Date",
+                duration: "Duration",
+                spaceFee: "Space Fee",
+                total: "TOTAL",
+
+                summaryNote:
+                    "Special requests are not included in this total. Dream Land Motel will contact you to confirm their price.",
+
+                sendBookingRequest:
+                    "Send Booking Request",
+
+                confirmationNotice:
+                    "Dream Land Motel will contact you to confirm your request."
+
+            },
+
+
+            rw: {
+
+                backHome: "← Ahabanza",
+
+                spaceEventBooking: "🎉 GUTANGA UMUBARE W'AHO MUKORERA IGIKORWA",
+                bookSpaceTitle: "Tanga Booking y'Ahantu",
+                bookSpaceIntro:
+                    "Bika ahantu ho gukorera inama, kwizihiza isabukuru, guteranira kw'umuryango cyangwa ibindi bikorwa bito.",
+
+                spacePrice: "5,000 RWF / Isaha",
+                spaceBookingFee: "Amafaranga yo gukodesha ahantu",
+
+                yourInformation: "Amakuru Yawe",
+                contactDetails:
+                    "Tanga amakuru yawe kugira ngo tubashe kukuvugisha.",
+
+                fullName: "Amazina Yuzuye",
+                enterFullName: "Andika amazina yawe yuzuye",
+
+                telephone: "Telefoni",
+                phonePlaceholder: "urugero: 0788 356 146",
+
+                comingFrom: "Muze muturutse he?",
+                locationPlaceholder:
+                    "Umujyi, Umurenge, Akarere...",
+
+                eventDetails: "Amakuru y'Igikorwa",
+                tellEvent:
+                    "Tubwire ibijyanye n'igikorwa uteganya.",
+
+                eventType: "Ubwoko bw'Igikorwa",
+                selectEventType:
+                    "Hitamo ubwoko bw'igikorwa",
+
+                smallMeeting: "👥 Inama Nto",
+                birthday: "🎂 Isabukuru",
+                familyGathering: "👨‍👩‍👧 Guteranira kw'Umuryango",
+                smallEvent: "🎉 Igikorwa Gito",
+                businessMeeting: "💼 Inama y'Ubucuruzi",
+                celebration: "🥳 Ibirori",
+                other: "✨ Ikindi",
+
+                numberOfGuests: "Umubare w'Abazitabira",
+                guestsPlaceholder: "urugero: 10",
+
+                eventDate: "Itariki y'Igikorwa",
+                startTime: "Isaha yo Gutangira",
+
+                howManyHours: "Muzakenera amasaha angahe?",
+                selectDuration:
+                    "Hitamo igihe muzamara",
+
+                duration1: "Isaha 1 — 5,000 RWF",
+                duration2: "Amasaha 2 — 10,000 RWF",
+                duration3: "Amasaha 3 — 15,000 RWF",
+                duration4: "Amasaha 4 — 20,000 RWF",
+                duration5: "Amasaha 5 — 25,000 RWF",
+                duration6: "Amasaha 6 — 30,000 RWF",
+                duration7: "Amasaha 7 — 35,000 RWF",
+                duration8: "Amasaha 8 — 40,000 RWF",
+
+                specialRequest: "Icyifuzo Cyihariye",
+
+                specialRequestIntro:
+                    "Tubwire ibyo wifuza ko dutegura mbere y'uko uhagera.",
+
+                whatPrepare:
+                    "Ni iki wifuza ko dutegura?",
+
+                specialRequestPlaceholder:
+                    "Urugero: Muzadutegurire inkoko kuri buri muntu, amazi icupa rimwe kuri buri muntu...",
+
+                specialRequestHelp:
+                    "Ushobora kwandika icyifuzo cyawe uko ubishaka. Ibyifuzo byihariye ntibibarirwa mu mafaranga yo gukodesha ahantu. Dream Land izakuvugisha ikubwire igiciro cyabyo.",
+
+                viewOurMenu:
+                    "Wifuza kureba Menu yacu?",
+
+                menuBeforeBooking:
+                    "Ushobora kureba menu y'ibiryo n'ibinyobwa mbere yo kohereza ubusabe bwawe.",
+
+                yesViewMenu: "Yego, Reba Menu",
+                continueBooking: "Komeza Booking",
+
+                bookingSummary: "Incamake ya Booking",
+                reviewBooking:
+                    "Banza usuzume booking yawe mbere yo kuyohereza.",
+
+                event: "Igikorwa",
+                guests: "Abazitabira",
+                date: "Itariki",
+                startTime: "Isaha yo Gutangira",
+                duration: "Igihe",
+                spaceFee: "Amafaranga y'Ahantu",
+                total: "TOTALI",
+
+                summaryNote:
+                    "Ibyifuzo byihariye ntibibarirwa muri aya mafaranga. Dream Land Motel izakuvugisha ikemeze igiciro cyabyo.",
+
+                sendBookingRequest:
+                    "Ohereza Ubusabe bwa Booking",
+
+                confirmationNotice:
+                    "Dream Land Motel izakuvugisha kugira ngo yemeze ubusabe bwawe."
+
+            }
+
+        };
+
+
+        /* =====================================================
+           SHARED LANGUAGE STORAGE
+        ====================================================== */
+
+        const bookSpaceLanguageStorageKey =
+            "dreamLandLanguage";
+
+        const bookSpaceSupportedLanguages =
+            ["en", "rw"];
+
+        const bookSpaceDefaultLanguage =
+            "en";
+
+
+        let bookSpaceCurrentLanguage =
+            localStorage.getItem(
+                bookSpaceLanguageStorageKey
+            ) || bookSpaceDefaultLanguage;
+
+
+        if (
+            !bookSpaceSupportedLanguages.includes(
+                bookSpaceCurrentLanguage
+            )
+        ) {
+            bookSpaceCurrentLanguage =
+                bookSpaceDefaultLanguage;
+        }
+
+
+        /* =====================================================
+           TRANSLATION FUNCTION
+        ====================================================== */
+
+        function translateBookSpacePage() {
+
+            document.documentElement.lang =
+                bookSpaceCurrentLanguage;
+
+
+            const elements =
+                document.querySelectorAll(
+                    "[data-translate]"
+                );
+
+
+            elements.forEach(element => {
+
+                const key =
+                    element.getAttribute(
+                        "data-translate"
+                    );
+
+                const translatedText =
+                    bookSpaceTranslations[
+                        bookSpaceCurrentLanguage
+                    ]?.[key];
+
+
+                if (
+                    translatedText !== undefined
+                ) {
+                    element.innerHTML =
+                        translatedText;
+                }
+
+            });
+
+
+            const placeholders =
+                document.querySelectorAll(
+                    "[data-translate-placeholder]"
+                );
+
+
+            placeholders.forEach(element => {
+
+                const key =
+                    element.getAttribute(
+                        "data-translate-placeholder"
+                    );
+
+                const translatedText =
+                    bookSpaceTranslations[
+                        bookSpaceCurrentLanguage
+                    ]?.[key];
+
+
+                if (
+                    translatedText !== undefined
+                ) {
+                    element.placeholder =
+                        translatedText;
+                }
+
+            });
+
+
+            const languageButton =
+                document.getElementById(
+                    "bookSpaceLanguageToggle"
+                );
+
+
+            if (languageButton) {
+
+                languageButton.textContent =
+                    bookSpaceCurrentLanguage === "en"
+                        ? "Kinyarwanda"
+                        : "English";
+
+
+                languageButton.setAttribute(
+                    "aria-label",
+                    bookSpaceCurrentLanguage === "en"
+                        ? "Switch to Kinyarwanda"
+                        : "Switch to English"
+                );
+
+
+                languageButton.setAttribute(
+                    "title",
+                    bookSpaceCurrentLanguage === "en"
+                        ? "Hindura ururimi ujye mu Kinyarwanda"
+                        : "Switch language to English"
+                );
+
+            }
+
+        }
+
+
+        /* =====================================================
+           LANGUAGE BUTTON
+        ====================================================== */
+
+        const bookSpaceLanguageButton =
+            document.getElementById(
+                "bookSpaceLanguageToggle"
+            );
+
+
+        if (bookSpaceLanguageButton) {
+
+            bookSpaceLanguageButton.addEventListener(
+                "click",
+                function () {
+
+                    bookSpaceCurrentLanguage =
+                        bookSpaceCurrentLanguage === "en"
+                            ? "rw"
+                            : "en";
+
+
+                    localStorage.setItem(
+                        bookSpaceLanguageStorageKey,
+                        bookSpaceCurrentLanguage
+                    );
+
+
+                    translateBookSpacePage();
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           INITIAL TRANSLATION
+        ====================================================== */
+
+        translateBookSpacePage();
+
+    </script>
+
+</body>
+
+</html>

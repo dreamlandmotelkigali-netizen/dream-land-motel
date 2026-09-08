@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dream Land Motel | Book Now</title>
+
+    <meta
+        name="description"
+        content="Book your stay at Dream Land Motel in Kigali."
+    >
+
+    <link
+        rel="stylesheet"
+        href="book.css"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- LANGUAGE BUTTON STYLE -->
+    <style>
+
+        .language-toggle {
+            border: 1px solid rgba(212, 175, 55, 0.7);
+            background: transparent;
+            color: inherit;
+            padding: 7px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .language-toggle:active {
+            transform: scale(0.97);
+        }
+
+        @media (max-width: 480px) {
+
+            .language-toggle {
+                padding: 6px 8px;
+                font-size: 11px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="booking-header">
+
+    <a
+        href="index.html"
+        class="back-button"
+        aria-label="Back to home"
+        data-translate-title="backHome"
+    >
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+
+    <div class="booking-brand">
+
+        <span data-translate="brandMain">
+            DREAM LAND
+        </span>
+
+        <small data-translate="brandSub">
+            MOTEL
+        </small>
+
+    </div>
+
+
+    <!-- LANGUAGE -->
+
+    <button
+        type="button"
+        id="languageToggle"
+        class="language-toggle"
+        aria-label="Switch to Kinyarwanda"
+        title="Hindura ururimi ujye mu Kinyarwanda"
+    >
+        Kinyarwanda
+    </button>
+
+
+    <!--
+        Default number is Kabuga.
+        JavaScript will change it when a branch is selected.
+    -->
+
+    <a
+        href="tel:+250788356146"
+        class="header-phone"
+        aria-label="Call Dream Land Motel"
+    >
+
+        <i class="fa-solid fa-phone"></i>
+
+    </a>
+
+</header>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="booking-intro">
+
+    <p
+        class="small-label"
+        data-translate="introLabel"
+    >
+        DREAM LAND MOTEL
+    </p>
+
+
+    <h1 data-translate="introTitle">
+        Book Your Stay
+    </h1>
+
+
+    <p data-translate="introText">
+        Choose your branch, room and preferred dates.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     BOOKING PAGE
+===================================================== -->
+
+<main class="booking-page">
+
+
+    <!-- =================================================
+         BOOKING FORM
+    ================================================== -->
+
+    <section class="booking-card">
+
+
+        <div class="card-heading">
+
+            <span class="heading-icon">
+
+                <i class="fa-solid fa-bed"></i>
+
+            </span>
+
+
+            <div>
+
+                <p
+                    class="small-label"
+                    data-translate="reservation"
+                >
+                    RESERVATION
+                </p>
+
+
+                <h2 data-translate="yourStay">
+                    Your Stay
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CUSTOMER DETAILS
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h3>
+
+                <i class="fa-solid fa-user"></i>
+
+                <span data-translate="guestInformation">
+                    Guest Information
+                </span>
+
+            </h3>
+
+
+            <div class="form-group">
+
+                <label
+                    for="guestName"
+                    data-translate="fullName"
+                >
+                    Full Name
+                </label>
+
+
+                <input
+                    type="text"
+                    id="guestName"
+                    placeholder="Enter your full name"
+                    data-translate-placeholder="enterFullName"
+                    autocomplete="name"
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label
+                        for="guestPhone"
+                        data-translate="phoneNumber"
+                    >
+                        Phone Number
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        id="guestPhone"
+                        placeholder="078xxxxxxx"
+                        inputmode="numeric"
+                        maxlength="10"
+                        autocomplete="tel"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label
+                        for="guestCount"
+                        data-translate="numberOfPeople"
+                    >
+                        Number of People
+                    </label>
+
+
+                    <select id="guestCount">
+
+                        <option
+                            value="1"
+                            data-translate="person1"
+                        >
+                            1 Person
+                        </option>
+
+
+                        <option
+                            value="2"
+                            data-translate="people2"
+                        >
+                            2 People
+                        </option>
+
+
+                        <option
+                            value="3"
+                            data-translate="people3"
+                        >
+                            3 People
+                        </option>
+
+
+                        <option
+                            value="4"
+                            data-translate="people4"
+                        >
+                            4 People
+                        </option>
+
+
+                        <option
+                            value="5"
+                            data-translate="people5"
+                        >
+                            5 People
+                        </option>
+
+
+                        <option
+                            value="6"
+                            data-translate="people6"
+                        >
+                            6+ People
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             BRANCH
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h3>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-translate="chooseBranch">
+                    Choose Branch
+                </span>
+
+            </h3>
+
+
+            <div class="branch-options">
+
+
+                <label class="branch-option">
+
+                    <input
+                        type="radio"
+                        name="branch"
+                        value="Kabuga"
+                    >
+
+
+                    <span class="branch-content">
+
+                        <strong>
+                            Dream Land Motel
+                        </strong>
+
+
+                        <small data-translate="kabuga">
+                            Kabuga
+                        </small>
+
+                    </span>
+
+
+                    <i class="fa-solid fa-check"></i>
+
+                </label>
+
+
+
+                <label class="branch-option">
+
+                    <input
+                        type="radio"
+                        name="branch"
+                        value="Bisenga"
+                    >
+
+
+                    <span class="branch-content">
+
+                        <strong>
+                            Dream Land Motel
+                        </strong>
+
+
+                        <small data-translate="bisenga">
+                            Bisenga
+                        </small>
+
+                    </span>
+
+
+                    <i class="fa-solid fa-check"></i>
+
+                </label>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ROOM
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h3>
+
+                <i class="fa-solid fa-key"></i>
+
+                <span data-translate="chooseRoom">
+                    Choose Room
+                </span>
+
+            </h3>
+
+
+            <div class="room-options">
+
+
+                <label class="room-option">
+
+                    <input
+                        type="radio"
+                        name="room"
+                        value="Standard"
+                        data-price="10000"
+                    >
+
+
+                    <span class="room-content">
+
+                        <strong data-translate="standardRoom">
+                            Standard Room
+                        </strong>
+
+
+                        <small data-translate="standardRoomText">
+                            Comfortable & welcoming
+                        </small>
+
+                    </span>
+
+
+                    <span class="room-price">
+                        10,000 Rwf
+                    </span>
+
+                </label>
+
+
+
+                <label class="room-option">
+
+                    <input
+                        type="radio"
+                        name="room"
+                        value="VIP"
+                        data-price="15000"
+                    >
+
+
+                    <span class="room-content">
+
+                        <strong data-translate="vipRoom">
+                            VIP Room
+                        </strong>
+
+
+                        <small data-translate="vipRoomText">
+                            Extra comfort & privacy
+                        </small>
+
+                    </span>
+
+
+                    <span class="room-price">
+                        15,000 Rwf
+                    </span>
+
+                </label>
+
+
+
+                <label class="room-option">
+
+                    <input
+                        type="radio"
+                        name="room"
+                        value="VVIP"
+                        data-price="20000"
+                    >
+
+
+                    <span class="room-content">
+
+                        <strong data-translate="vvipRoom">
+                            VVIP Room
+                        </strong>
+
+
+                        <small data-translate="vvipRoomText">
+                            Premium accommodation
+                        </small>
+
+                    </span>
+
+
+                    <span class="room-price">
+                        20,000 Rwf
+                    </span>
+
+                </label>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             DATES
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h3>
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span data-translate="stayDates">
+                    Stay Dates
+                </span>
+
+            </h3>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label
+                        for="checkIn"
+                        data-translate="checkIn"
+                    >
+                        Check-in
+                    </label>
+
+
+                    <input
+                        type="date"
+                        id="checkIn"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label
+                        for="checkOut"
+                        data-translate="checkOut"
+                    >
+                        Check-out
+                    </label>
+
+
+                    <input
+                        type="date"
+                        id="checkOut"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SPECIAL REQUEST
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h3>
+
+                <i class="fa-solid fa-message"></i>
+
+                <span data-translate="specialRequest">
+                    Special Request
+                </span>
+
+            </h3>
+
+
+            <div class="form-group">
+
+                <label
+                    for="bookingNote"
+                    data-translate="note"
+                >
+                    Note
+
+                    <span data-translate="optional">
+                        (Optional)
+                    </span>
+
+                </label>
+
+
+                <textarea
+                    id="bookingNote"
+                    rows="4"
+                    placeholder="Any special request for your stay?"
+                    data-translate-placeholder="specialRequestPlaceholder"
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             BOOK BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            id="bookNowButton"
+            class="book-submit"
+        >
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+
+            <span data-translate="bookNow">
+                BOOK NOW
+            </span>
+
+        </button>
+
+
+        <p class="booking-notice">
+
+            <i class="fa-solid fa-shield-heart"></i>
+
+
+            <span data-translate="bookingNotice">
+                Your booking request will be sent directly to
+                Dream Land Motel via WhatsApp.
+            </span>
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         BOOKING SUMMARY
+    ================================================== -->
+
+    <aside class="booking-summary">
+
+        <div class="summary-header">
+
+            <p
+                class="small-label"
+                data-translate="yourBooking"
+            >
+                YOUR BOOKING
+            </p>
+
+
+            <h2 data-translate="staySummary">
+                Stay Summary
+            </h2>
+
+        </div>
+
+
+        <div class="summary-icon">
+
+            <i class="fa-solid fa-hotel"></i>
+
+        </div>
+
+
+        <div class="summary-details">
+
+
+            <div class="summary-row">
+
+                <span data-translate="branch">
+                    Branch
+                </span>
+
+
+                <strong
+                    id="summaryBranch"
+                    data-translate="notSelected"
+                >
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span data-translate="room">
+                    Room
+                </span>
+
+
+                <strong
+                    id="summaryRoom"
+                    data-translate="notSelected"
+                >
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span data-translate="people">
+                    People
+                </span>
+
+
+                <strong id="summaryGuests">
+                    1 Person
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span data-translate="checkIn">
+                    Check-in
+                </span>
+
+
+                <strong id="summaryCheckIn">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span data-translate="checkOut">
+                    Check-out
+                </span>
+
+
+                <strong id="summaryCheckOut">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span data-translate="nights">
+                    Nights
+                </span>
+
+
+                <strong id="summaryNights">
+                    0
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="summary-total">
+
+            <span data-translate="estimatedTotal">
+                Estimated Total
+            </span>
+
+
+            <strong id="summaryTotal">
+                0 Rwf
+            </strong>
+
+        </div>
+
+
+        <p
+            class="summary-note"
+            data-translate="summaryNote"
+        >
+            Final confirmation and availability will be
+            handled by Dream Land Motel.
+        </p>
+
+    </aside>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="booking-footer">
+
+    <div class="footer-logo">
+        DREAM LAND
+    </div>
+
+
+    <p data-translate="footerDescription">
+        BAR • RESTAURANT • MOTEL
+    </p>
+
+
+    <a
+        href="tel:+250788356146"
+        class="footer-phone"
+    >
+
+        <i class="fa-solid fa-phone"></i>
+
+        0788 356 146
+
+    </a>
+
+
+    <p class="copyright">
+
+        © 2026 Dream Land Motel.
+
+        <span data-translate="allRights">
+            All rights reserved.
+        </span>
+
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOOKING JAVASCRIPT
+===================================================== -->
+
+<script src="book.js"></script>
+
+</body>
+
+</html>
